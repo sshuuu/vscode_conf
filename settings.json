@@ -1,0 +1,54 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+  // エディタ設定
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "editor.trimAutoWhitespace": true,
+  "editor.formatOnType": true,
+  "editor.cursorBlinking": "expand",
+  "editor.renderControlCharacters": true,
+  "editor.renderIndentGuides": true,
+  "editor.wordWrap": "on",
+  "editor.autoIndent": true,
+
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": false,
+
+  "workbench.colorTheme": "Monokai",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
+  // 禅モード設定
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": false,
+
+  // ruby設定
+  "ruby.lint": {
+    "reek": false,
+    "rubocop": {
+      "lint": true,
+      "except": [
+        "Metrics/LineLength",
+        "Style/AsciiComments",
+        "Style/RedundantSelf",
+        "Lint/StringConversionInInterpolation"
+      ],
+      "rails": true
+    },
+    "ruby": false,
+    "fasterer": true,
+    "debride": {
+      "rails": true
+    },
+    "ruby-lint": false
+  },
+
+  "window.zoomLevel": 0,
+  "workbench.panel.location": "bottom",
+
+  // ターミナル設定
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.rendererType": "dom",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  }
+}
